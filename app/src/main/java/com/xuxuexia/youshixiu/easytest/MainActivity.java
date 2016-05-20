@@ -27,7 +27,8 @@ import android.content.ComponentName;
         import android.content.Intent;
         import android.content.pm.PackageInfo;
         import android.content.pm.PackageManager;
-        import android.net.Uri;
+import android.graphics.Color;
+import android.net.Uri;
         import android.net.wifi.WifiConfiguration.Status;
         import android.net.wifi.WifiInfo;
         import android.net.wifi.WifiManager;
@@ -64,10 +65,16 @@ public class MainActivity extends TabActivity {
         setContentView(R.layout.activity_main);
 
         TabHost tabHost = getTabHost();
-        tabHost.addTab(tabHost.newTabSpec("游视秀").setContent(new Intent(this,YoushixiuActivity.class)));
-        tabHost.addTab(tabHost.newTabSpec("大米").setContent(new Intent(this,DamiActivity.class)));
+        tabHost.addTab(tabHost.newTabSpec("tab1").setContent(new Intent(this,YoushixiuActivity.class)).setIndicator("游视秀"));
+        tabHost.addTab(tabHost.newTabSpec("tab2").setContent(new Intent(this,DamiActivity.class)).setIndicator("大米"));
+        //tabHost.setBackgroundColor(Color.argb(150, 20, 80, 150));
         tabHost.setCurrentTab(0);
+        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+            @Override
+            public void onTabChanged(String tableId) {
 
+            }
+        });
         // 获取手机分辨率
         DisplayMetrics mDisplayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mDisplayMetrics);
