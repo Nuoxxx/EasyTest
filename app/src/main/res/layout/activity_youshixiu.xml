@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+
+    <TextView
+        android:id="@+id/ysx"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="游视秀APP操作" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/switchtoYsxTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp"
+            android:text="测试" />
+
+        <Button
+            android:id="@+id/switchtodevelop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp"
+            android:text="开发" />
+
+        <Button
+            android:id="@+id/switchtonormal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp"
+            android:text="正式" />
+        <Button
+            android:id="@+id/switchtoPreYsx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:minHeight="7dp"
+            android:text="现网预发布" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/enterWLAN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp"
+            android:text="打开WLAN设置" />
+
+        <Button
+            android:id="@+id/enteryoushixiu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="7dp"
+            android:text="打开游视秀" />
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/deleteYoushixiu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="7dp"
+        android:text="删除youshixiu文件夹" />
+
+    <TextView
+        android:id="@+id/deleteYoushixiuinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:text="(会把录制的视频也删除掉，慎用哦！)" />
+
+    <Button
+        android:id="@+id/cleardata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="7dp"
+        android:text="清除游视秀数据 或者 卸载游视秀" />
+
+    <Button
+        android:id="@+id/switchtoWbTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minHeight="7dp"
+        android:text="玩吧测试环境" />
+
+    <Button
+        android:id="@+id/switchtoSpzTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:minHeight="7dp"
+        android:text="视频站测试环境" />
+
+    <TextView
+        android:id="@+id/linkgong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center_vertical"
+        android:text="http://192.168.1.135 "
+        android:textSize="14dp" />
+
+</LinearLayout>
