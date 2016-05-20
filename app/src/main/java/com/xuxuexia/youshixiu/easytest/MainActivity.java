@@ -69,12 +69,12 @@ public class MainActivity extends TabActivity {
         tabHost.addTab(tabHost.newTabSpec("tab2").setContent(new Intent(this,DamiActivity.class)).setIndicator("大米"));
         //tabHost.setBackgroundColor(Color.argb(150, 20, 80, 150));
         tabHost.setCurrentTab(0);
-        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
-            @Override
-            public void onTabChanged(String tableId) {
-
-            }
-        });
+//        tabHost.setOnTabChangedListener(new TabHost.OnTabChangeListener() {
+//            @Override
+//            public void onTabChanged(String tableId) {
+//
+//            }
+//        });
         // 获取手机分辨率
         DisplayMetrics mDisplayMetrics = new DisplayMetrics();
         getWindowManager().getDefaultDisplay().getMetrics(mDisplayMetrics);
